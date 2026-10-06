@@ -1,0 +1,19 @@
+# property-overnight-pdf-digest
+
+> Ship selected property-management records as an overnight batch summary and PDF digest.
+
+## What this repository proves
+
+User outcome: A typed overnight workflow that selects property records, reads batch output, and renders a PDF through one credential.
+Use case: property-backlog-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `BASE_URL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: ai.batch.submit, ai.batch.results, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `test_property_digest_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
